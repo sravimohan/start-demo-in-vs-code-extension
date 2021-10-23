@@ -1,7 +1,7 @@
 {
-	"name": "demo-mode",
-	"displayName": "Demo Mode",
-	"description": "Configure your demo mode settings ahead and get into Demo Mode instantly when required",
+	"name": "start-demo",
+	"displayName": "Start Demo",
+	"description": "Configure your demo settings ahead and get into your Demo instantly when required",
 	"icon": "logo.png",
 	"version": "0.0.1",
 	"author": "Ravi Mohan",
@@ -9,10 +9,11 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sravimohan/demo-mode-vs-code-extension"
+		"url": "https://github.com/sravimohan/start-demo-vs-code-extension"
 	},
 	"keywords": [
 		"demo",
+		"start demo",
 		"demo mode",
 		"presentation",
 		"presentation mode",
@@ -27,37 +28,37 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:demo-mode.startDemoMode"
+		"onCommand:start-demo.startstartDemo"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "demo-mode.startDemoMode",
+				"command": "start-demo.startstartDemo",
 				"title": "Demo Start"
 			},
 			{
-				"command": "demo-mode.endDemoMode",
+				"command": "start-demo.endstartDemo",
 				"title": "Demo End"
 			}
 		],
 		"keybindings": [
 			{
-				"command": "extension.demoModeEnd",
+				"command": "extension.startDemoEnd",
 				"key": "escape",
-				"when": "inDemoMode"
+				"when": "instartDemo"
 			}
 		],
 		"configuration": {
 			"type": "object",
-			"title": "Demo Mode Settings",
+			"title": "Start Demo Settings",
 			"properties": {
-				"demoMode.zoomLevel": {
+				"startDemo.zoomLevel": {
 					"type": "integer",
 					"default": 3,
-					"description": "Zoom level when in demo mode"
+					"description": "Zoom level when in demo"
 				},
-				"demoMode.enableZenMode": {
+				"startDemo.enableZenMode": {
 					"type": "boolean",
 					"default": true,
 					"description": "Zen Mode"

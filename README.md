@@ -1,8 +1,8 @@
-# Demo Mode - VS Code Extension
+# Start Demo - VS Code Extension
 
 ![Logo](logo.png)
 
-Configure your demo mode settings ahead and get into Demo Mode instantly when required.
+Configure your demo settings ahead and get into demo mode instantly when required.
 
 TODO: Animation
 
@@ -10,8 +10,8 @@ TODO: Animation
 
 This extension contributes the following settings:
 
-- `demoMode.zoomLevel`: set zoom level
-- `demoMode.enableZenMode`: enable / disabe Zen mode
+- `startDemo.zoomLevel`: set zoom level
+- `startDemo.enableZenMode`: enable / disabe Zen mode
 
 ## Known Issues
 
@@ -21,7 +21,7 @@ This extension contributes the following settings:
 
 ### 1.0.0
 
-Initial release of Demo Mode
+Initial release of Start Demo
 
 ---
 

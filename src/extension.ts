@@ -4,14 +4,14 @@ export function activate(context: vscode.ExtensionContext) {
 
 	let defaultZoomLevel = vscode.workspace.getConfiguration('').get('window.zoomLevel');
 
-	let startDemo = vscode.commands.registerCommand('demo-mode.startDemoMode', () => {
-		vscode.commands.executeCommand('setContext', 'inDemoMode', true);
+	let startDemo = vscode.commands.registerCommand('start-demo.startstartDemo', () => {
+		vscode.commands.executeCommand('setContext', 'instartDemo', true);
 		setZoomLevel();
 		setZenMode();
 	});
 
-	let endDemo = vscode.commands.registerCommand('demo-mode.endDemoMode', () => {
-		vscode.commands.executeCommand('setContext', 'inDemoMode', false);
+	let endDemo = vscode.commands.registerCommand('start-demo.endstartDemo', () => {
+		vscode.commands.executeCommand('setContext', 'instartDemo', false);
 		resetZoomLevel(defaultZoomLevel);
 		resetZenMode();
 	});
@@ -21,8 +21,8 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 function setZoomLevel() {
-	let zoomLevelInDemoMode = vscode.workspace.getConfiguration('').get('demoMode.zoomLevel');
-	vscode.workspace.getConfiguration('').update('window.zoomLevel', zoomLevelInDemoMode, true);
+	let zoomLevelInstartDemo = vscode.workspace.getConfiguration('').get('startDemo.zoomLevel');
+	vscode.workspace.getConfiguration('').update('window.zoomLevel', zoomLevelInstartDemo, true);
 }
 
 function resetZoomLevel(defaultZoomLevel: any) {
@@ -30,14 +30,14 @@ function resetZoomLevel(defaultZoomLevel: any) {
 }
 
 function setZenMode() {
-	let enableZenMode = vscode.workspace.getConfiguration('').get('demoMode.enableZenMode');
+	let enableZenMode = vscode.workspace.getConfiguration('').get('startDemo.enableZenMode');
 	if (enableZenMode) {
 		vscode.commands.executeCommand('workbench.action.toggleZenMode');
 	}
 }
 
 function resetZenMode() {
-	let enableZenMode = vscode.workspace.getConfiguration('').get('demoMode.enableZenMode');
+	let enableZenMode = vscode.workspace.getConfiguration('').get('startDemo.enableZenMode');
 	if (enableZenMode) {
 		vscode.commands.executeCommand('workbench.action.toggleZenMode');
 	}
