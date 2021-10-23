@@ -1,6 +1,6 @@
 # Demo Mode - VS Code Extension
 
-Pre-configure your demo settings and switch to demo mode instantly.
+Configure your demo mode settings ahead and get into Demo Mode instantly when required.
 
 TODO: Animation
 
