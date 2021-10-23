@@ -2,6 +2,7 @@
 	"name": "demo-mode",
 	"displayName": "Demo Mode",
 	"description": "Configure your demo mode settings ahead and get into Demo Mode instantly when required",
+	"icon": "logo.png",
 	"version": "0.0.1",
 	"author": "Ravi Mohan",
 	"publisher": "roonga",

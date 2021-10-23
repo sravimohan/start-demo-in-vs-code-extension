@@ -1,5 +1,7 @@
 # Demo Mode - VS Code Extension
 
+![Logo](logo.png)
+
 Configure your demo mode settings ahead and get into Demo Mode instantly when required.
 
 TODO: Animation
