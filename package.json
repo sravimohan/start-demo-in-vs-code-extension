@@ -3,7 +3,7 @@
 	"displayName": "Start Demo",
 	"description": "Configure your demo settings ahead and get into your Demo instantly when required",
 	"icon": "logo.png",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Ravi Mohan",
 	"publisher": "roonga",
 	"license": "MIT",
