@@ -3,13 +3,13 @@
 	"displayName": "Start Demo",
 	"description": "Configure your demo settings ahead and get into your Demo instantly when required",
 	"icon": "logo.png",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"author": "Ravi Mohan",
 	"publisher": "roonga",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sravimohan/start-demo-vs-code-extension"
+		"url": "https://github.com/sravimohan/start-demo-in-vs-code-extension"
 	},
 	"keywords": [
 		"demo",
@@ -53,15 +53,77 @@
 			"type": "object",
 			"title": "Start Demo Settings",
 			"properties": {
-				"startDemo.zoomLevel": {
-					"type": "integer",
-					"default": 2,
-					"description": "Zoom level when in demo"
+				"startDemo.fullScreen": {
+					"type": "boolean",
+					"default": false,
+					"description": "Full Screen"
 				},
 				"startDemo.enableZenMode": {
 					"type": "boolean",
 					"default": false,
 					"description": "Zen Mode"
+				},
+				"startDemo.centeredLayout": {
+					"type": "boolean",
+					"default": false,
+					"description": "Centered Layout"
+				},
+				"startDemo.showSideBar": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show Side Bar"
+				},
+				"startDemo.showStatusBar": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show Status Bar"
+				},
+				"startDemo.showActivityBar": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show Activity Bar"
+				},
+				"startDemo.showPanel": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show Panel"
+				},
+				"startDemo.showEditorArea": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show Editor Area"
+				},
+				"startDemo.sideBarLocation": {
+					"type": "string",
+					"default": "left",
+					"description": "Side Bar Location",
+					"items": {
+						"type": "string",
+						"enum": [
+							"Left",
+							"Right"
+						]
+					},
+					"uniqueItems": true
+				},
+				"startDemo.panelLocation": {
+					"type": "string",
+					"default": "bottom",
+					"description": "Panel Location",
+					"items": {
+						"type": "string",
+						"enum": [
+							"Left",
+							"Right",
+							"Bottom"
+						]
+					},
+					"uniqueItems": true
+				},
+				"startDemo.zoomLevel": {
+					"type": "integer",
+					"default": 2,
+					"description": "Zoom level"
 				}
 			}
 		}
