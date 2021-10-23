@@ -39,7 +39,7 @@ function setZenMode() {
 function resetZenMode() {
 	let enableZenMode = vscode.workspace.getConfiguration('').get('startDemo.enableZenMode');
 	if (enableZenMode) {
-		vscode.commands.executeCommand('workbench.action.toggleZenMode');
+		vscode.commands.executeCommand('workbench.action.exitZenMode');
 	}
 }
 

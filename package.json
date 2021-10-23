@@ -35,11 +35,11 @@
 		"commands": [
 			{
 				"command": "start-demo.startstartDemo",
-				"title": "Demo Start"
+				"title": "Start Demo"
 			},
 			{
 				"command": "start-demo.endstartDemo",
-				"title": "Demo End"
+				"title": "End Demo"
 			}
 		],
 		"keybindings": [
@@ -55,12 +55,12 @@
 			"properties": {
 				"startDemo.zoomLevel": {
 					"type": "integer",
-					"default": 3,
+					"default": 2,
 					"description": "Zoom level when in demo"
 				},
 				"startDemo.enableZenMode": {
 					"type": "boolean",
-					"default": true,
+					"default": false,
 					"description": "Zen Mode"
 				}
 			}
